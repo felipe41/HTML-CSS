@@ -1,6 +1,16 @@
 @charset "UTF-8";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Roboto+Slab:wght@100;200&family=Roboto:wght@100&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --fonte1: verdana, Geneva , Tahoma, sans-serif;
+    --fonte2: 'Work Sans', sans-serif;
+    fonte3: 'Roboto Slab', serif;
+}
+
 * {
     margin:  0px;
     padding: 0px;
@@ -9,6 +19,7 @@
 html, body {
     min-width: 100vh;
     background-color: rgb(248, 248, 248);
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +30,7 @@ header {
 header > h1 {
   padding-top: 50px;
   font-variant: small-caps;
+  font-size: 2vw;
 }
 
 header > p {
@@ -37,9 +49,25 @@ a:hover {
 
 section.imagem > p {
    width: 500px;
-   background-color: rgb(82, 81, 81);
+   background-color: rgba(2, 2, 2, 0.514);
+   text-shadow: 2px 2px 0px black;
 
    
+}
+
+section#img01 {
+    background-image: url('imgpc/ábaco.jpg');
+    background-position: left center;
+}
+section#img02 {
+    background-image: url('imgpc/eniaccomputador\ 02.webp');
+}
+section#img03 {
+    background-image: url('imgpc/geração-3.png.crdownload');
+    background-position: right center;
+}
+section#img04 {
+    background-image: url('imgpc/computadores-\ 4\ geracao.jpg');
 }
 
 footer {
@@ -47,12 +75,17 @@ footer {
     color: white;
     text-align: center;
     padding: 5px;
+   font-family: Arial, Helvetica, sans-serif;
 }
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+
+}
+section > p {
+    padding-bottom: 2em;
 }
 section.normal {
     background-color: white
@@ -60,6 +93,10 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgb(114, 111, 111);
+    background-color: rgb(141, 136, 136);
     color: rgb(255, 255, 255);
-   
+    box-shadow: inset 6px 6px 13px 0px black;
+background-attachment: fixed;
+}
+
+    
