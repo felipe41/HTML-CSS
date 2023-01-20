@@ -22,9 +22,24 @@
 
 
         }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(153, 182, 219)
+            
+        }
         thead, tfoot {
             background-color: rgb(61, 134, 202);
+            color: white;
         }
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(182, 126, 126));
+
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray);
+        
         td.num {
             text-align: right;
 
@@ -36,105 +51,109 @@
     <h1>Uso de Tabela Grande </h1>
 
     <table>
+        <caption> População das unidade Federativas </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 <tfoot>    <!-- Rodapé (Local onde irá ficar a soma total.)-->
      <tr>
-        <th>
-            Total de habitates
+        <th scope="row">
+            Total de Habitates
         </th>
-        <td> <Strong>210.147.125</Strong></td>
+        <td scope="num"> <Strong>210.147.125</Strong></td>
    
     </tr>
 </tfoot>
 <tbody>   <!-- Corpo do texto. Local onde irá ficar o nome do Estado e os dados numericos.-->
             
-    <tr>
-        <td>
-            São Paulo
-        </td>
-        <td class="num"> 45.919.049</td>
-    </tr>
-    <tr>
-        <td>Minas Gerais </td>
-        <td class="num">21.000.45</td>
-    </tr>
-    <tr>
-        <td>Rio de Janeiro</td>
-        <td class="num"> 17.500.045</td>
-    </tr>
-
-    <tr>
-        <td>
-            Bahia
-        </td>
-        <td class="num"> 45.919.049</td>
-    </tr>
-    <tr>
-        <td> Pernambuco </td>
-        <td class="num">21.000.45</td>
-    </tr>
-    <tr>
-        <td>Amazonia</td>
-        <td class="num"> 17.500.045</td>
-    </tr>
-    <tr>
-        <td>
-            Brasília
-        </td>
-        <td class="num"> 45.919.049</td>
-    </tr>
-    <tr>
-        <td> Rio Grande do Sul </td>
-        <td class="num">21.000.45</td>
-    </tr>
-    <tr>
-        <td> Paraná</td>
-        <td class="num"> 17.500.045</td>
-    </tr> <tr>
-        <td>
-            Espirito santo
-        </td>
-        <td class="num"> 45.919.049</td>
-    </tr>
-    <tr>
-        <td> Mato grosso do sul </td>
-        <td class="num">21.000.45</td>
-    </tr>
-    <tr>
-        <td>Roraima</td>
-        <td class="num"> 17.500.045</td>
-    </tr> <tr>
-        <td>
-            Piauí
-        </td>
-        <td class="num"> 45.919.049</td>
-    </tr>
-    <tr>
-        <td>Goiás </td>
-        <td class="num">21.000.45</td>
-    </tr>
-    <tr>
-        <td> Ceará</td>
-        <td class="num"> 17.500.045</td>
-    </tr> <tr>
-        <td>
-            Maranhão
-        </td>
-        <td class="num"> 45.919.049</td>
-    </tr>
-    <tr>
-        <td>Rio Grande do norte </td>
-        <td class="num">21.000.45</td>
-    </tr>
-    <tr>
-        <td>Alagoas </td>
-        <td class="num"> 17.500.045</td>
-    </tr>
+  
+  
+    
+        <tr>
+            <td>
+                São Paulo
+            </td>
+            <td class="num"> 45.919.049</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais </td>
+            <td class="num">21.000.45</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num"> 17.500.045</td>
+        </tr>
+        <tr>
+            <td>
+                Bahia
+            </td>
+            <td class="num"> 45.919.049</td>
+        </tr>
+        <tr>
+            <td> Pernambuco </td>
+            <td class="num">21.000.45</td>
+        </tr>
+        <tr>
+            <td>Amazonia</td>
+            <td class="num"> 17.500.045</td>
+        </tr>
+        <tr>
+            <td>
+                Brasília
+            </td>
+            <td class="num"> 45.919.049</td>
+        </tr>
+        <tr>
+            <td> Rio Grande do Sul </td>
+            <td class="num">21.000.45</td>
+        </tr>
+        <tr>
+            <td> Paraná</td>
+            <td class="num"> 17.500.045</td>
+        </tr> <tr>
+            <td>
+                Espirito santo
+            </td>
+            <td class="num"> 45.919.049</td>
+        </tr>
+        <tr>
+            <td> Mato grosso do sul </td>
+            <td class="num">21.000.45</td>
+        </tr>
+        <tr>
+            <td>Roraima</td>
+            <td class="num"> 17.500.045</td>
+        </tr> <tr>
+            <td>
+                Piauí
+            </td>
+            <td class="num"> 45.919.049</td>
+        </tr>
+        <tr>
+            <td>Goiás </td>
+            <td class="num">21.000.45</td>
+        </tr>
+        <tr>
+            <td> Ceará</td>
+            <td class="num"> 17.500.045</td>
+        </tr> <tr>
+            <td>
+                Maranhão
+            </td>
+            <td class="num"> 45.919.049</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do norte </td>
+            <td class="num">21.000.45</td>
+        </tr>
+        <tr>
+            <td>Alagoas </td>
+            <td class="num"> 17.500.045</td>
+        </tr>
+    
 </tbody>
 
     </table>
