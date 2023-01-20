@@ -23,7 +23,7 @@
 
         }
         thead, tfoot {
-            background-color: yellow;
+            background-color: rgb(61, 134, 202);
         }
         td.num {
             text-align: right;
@@ -36,13 +36,13 @@
     <h1>Uso de Tabela Grande </h1>
 
     <table>
-        <tr>
-            <th>Estado</th>
-            <th>População</th>  
-            
-            
-        </tr>
-<tfoot>  
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+<tfoot>    <!-- Rodapé (Local onde irá ficar a soma total.)-->
      <tr>
         <th>
             Total de habitates
@@ -51,8 +51,8 @@
    
     </tr>
 </tfoot>
-<tbody>
-   
+<tbody>   <!-- Corpo do texto. Local onde irá ficar o nome do Estado e os dados numericos.-->
+            
     <tr>
         <td>
             São Paulo
